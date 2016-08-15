@@ -20,7 +20,7 @@ import {
 
 import Splash from './splash';
 import Home from './home';
-
+//what the fuck is wrong with mac git github
 
 let nav;
 
