@@ -64,7 +64,7 @@ class reactnative extends Component {
     }else {
       return (
         <View style={styles.container}>
-                    <StatusBar
+                  <StatusBar
                       backgroundColor='transparent'
                       translucent={true}/>
                    <Splash/>
