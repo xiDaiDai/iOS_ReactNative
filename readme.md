@@ -1,2 +1,1 @@
-this is the project created on mac
-so far so goodi
+## See how you feel on Mac
