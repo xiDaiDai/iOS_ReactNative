@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 
 import Splash from './splash';
-import Home from './home';
+import Root from './root';
 //what the fuck is wrong with mac git github,xishiwei@sina.cn/xiDaiDai
 
 let nav;
@@ -52,21 +52,27 @@ class reactnative extends Component {
     if (this.state.splashed) {
       let initialRoute = {
         name: 'home',
-        component:Home
+        component:Root
       }
       return (
+        <View style={styles.container}>
+        <StatusBar
+          hidden={false}
+          barStyle="light-content"
+        />
         <Navigator
               style={styles.container}
               initialRoute={initialRoute}
               configureScene={() => Navigator.SceneConfigs.PushFromRight}
               renderScene={(route,navigator)=>this.renderScene(route,navigator)}
-        />);
+        />
+        </View>);
     }else {
       return (
         <View style={styles.container}>
                   <StatusBar
-                      backgroundColor='transparent'
-                      translucent={true}/>
+                      hidden={false}
+                      barStyle="light-content"/>
                    <Splash/>
                 </View>);
     }

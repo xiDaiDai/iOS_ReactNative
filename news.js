@@ -21,6 +21,7 @@ import {
 import LoadingMoreView from './loadingMore';
 import LoadingView from './loading';
 import NewsPage from './newsPage';
+import NavigationBar from './navigationBar';
 const url = "https://jandan.net/?oxwlxojflwblxbsapi=get_recent_posts&include=url,date,title,custom_fields&custom_fields=thumb_c,views&dev=1&page=";
 
 let pageIndex = 1;
@@ -49,9 +50,11 @@ class NewsList extends Component {
     if(!this.state.loaded)return <LoadingView/>
     return (
       <View style={{flex:1}}>
-        <View style={{height:50,backgroundColor:'#4b4b4b',justifyContent:'center'}}>
-          <Text style={{fontSize:20,color:'white',textAlign:'center'}}>新鲜事</Text>
-        </View>
+        <NavigationBar
+          title={"新闻"}
+          backHidden = {true}
+          actionHidden={true}
+          />
         <ListView
           dataSource={this.state.dataSource}
           renderRow={(newsItem)=>this.renderNewsItem(newsItem)}
