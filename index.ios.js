@@ -71,7 +71,7 @@ class reactnative extends Component {
       return (
         <View style={styles.container}>
                   <StatusBar
-                      hidden={false}
+                      hidden={true}
                       barStyle="light-content"/>
                    <Splash/>
                 </View>);

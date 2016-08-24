@@ -32,11 +32,6 @@ export default class Home extends Component {
 	render() {
 		return (
 			<View style={{flex:1}}>
-		      <StatusBar
-		           backgroundColor="#444444"
-		           barStyle="light-content"
-		           hidden ={false}/>
-
 		      <ScrollableTabView
 		          tabBarBackgroundColor='#444444'
 		          tabBarUnderlineColor='transparent'

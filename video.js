@@ -17,7 +17,8 @@ import {
   RefreshControl,
   TouchableHighlight,
   Dimensions,
-  TouchableOpacity
+  TouchableOpacity,
+  StatusBar
 } from 'react-native';
 
 import LoadingView from './loading';
@@ -53,6 +54,9 @@ class VideoList extends Component {
     if (!this.state.loaded) return (<LoadingView/>);
     return (
       <View style={{backgroundColor:'white',flex:1}}>
+      <StatusBar
+		           barStyle="light-content"
+		           hidden ={false}/>
       <NavigationBar
           title={"视频"}
           backHidden = {true}

@@ -20,20 +20,20 @@ const FacebookTabBar = React.createClass({
 	render() {
 		return (<View style={styles.tabs}>
 		      	<TouchableOpacity  activeOpacity ={1}  onPress={() => this.props.goToPage(0)} style={styles.tab}>
-		            <Image style={{width:25,height:25}} source={require('./img/icon_tab_home.png')}></Image>
-		        	<Text style={{color:this.props.activeTab === 0 ? '#80BD01' : '#fff',fontSize:12}}>{this.tabIcons[0]}</Text>
+		            <Image style={{width:25,height:25}} source={require('./img/anzhuo.png')}></Image>
+		        	<Text style={{color:this.props.activeTab === 0 ? '#80BD01' : '#fff',fontSize:12,marginTop:3}}>{this.tabIcons[0]}</Text>
 		        </TouchableOpacity>
 		        <TouchableOpacity  activeOpacity ={1} onPress={() => this.props.goToPage(1)} style={styles.tab}>
-		            <Image style={{width:25,height:25}} source={require('./img/icon_tab_home.png')}></Image>
-		        	<Text style={{color:this.props.activeTab === 1 ? '#80BD01' : '#fff',fontSize:12}}>{this.tabIcons[1]}</Text>
+		            <Image style={{width:25,height:25}} source={require('./img/ios.png')}></Image>
+		        	<Text style={{color:this.props.activeTab === 1 ? '#80BD01' : '#fff',fontSize:12,marginTop:3}}>{this.tabIcons[1]}</Text>
 		        </TouchableOpacity>
 		        <TouchableOpacity  activeOpacity ={1}  onPress={() => this.props.goToPage(2)} style={styles.tab}>
-		            <Image style={{width:25,height:25}} source={require('./img/icon_tab_home.png')}></Image>
-		        	<Text style={{color:this.props.activeTab === 2 ? '#80BD01' : '#fff',fontSize:12}}>{this.tabIcons[2]}</Text>
+		            <Image style={{width:25,height:25}} source={require('./img/tongzhi.png')}></Image>
+		        	<Text style={{color:this.props.activeTab === 2 ? '#80BD01' : '#fff',fontSize:12,marginTop:3}}>{this.tabIcons[2]}</Text>
 		        </TouchableOpacity>
 		        <TouchableOpacity   activeOpacity ={1} onPress={() => this.props.goToPage(3)} style={styles.tab}>
-		            <Image style={{width:25,height:25}} source={require('./img/icon_tab_home.png')}></Image>
-		        	<Text style={{color:this.props.activeTab === 3 ? '#80BD01' : '#fff',fontSize:12}}>{this.tabIcons[3]}</Text>
+		            <Image style={{width:25,height:25}} source={require('./img/huihua.png')}></Image>
+		        	<Text style={{color:this.props.activeTab === 3 ? '#80BD01' : '#fff',fontSize:12,marginTop:3}}>{this.tabIcons[3]}</Text>
 		        </TouchableOpacity>
     		</View>)
 	}
