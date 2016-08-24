@@ -18,9 +18,9 @@ import ScrollableTabView, {
 } from 'react-native-scrollable-tab-view';
 import TabBar from './tabBar';
 import Pop from './news';
-import Ask from './news';
+import Ask from './joke';
 import Share from './amazing';
-import Job from './news';
+import Job from './video';
 
 export default class Home extends Component {
 	constructor(props) {
